@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors = ['Ryo Nakamura']
   spec.email = ['r7kamura@gmail.com']
 
-  spec.summary = 'RuboCop extension for checking and correcting Rails deprecated code.'
+  spec.summary = 'RuboCop extension for Rails deprecation.'
   spec.homepage = 'https://github.com/r7kamura/rubocop-rails_deprecation'
   spec.license = 'MIT'
   spec.required_ruby_version = '>= 2.6.0'
