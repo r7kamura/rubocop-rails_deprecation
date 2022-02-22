@@ -1,4 +1,4 @@
-# Rubocop::RailsDeprecation
+# rubocop-rails_deprecation
 
 RuboCop extension for Rails deprecation.
 
