@@ -4,7 +4,7 @@ require_relative "lib/rubocop/rails_deprecation/version"
 
 Gem::Specification.new do |spec|
   spec.name = "rubocop-rails_deprecation"
-  spec.version = Rubocop::RailsDeprecation::VERSION
+  spec.version = RuboCop::RailsDeprecation::VERSION
   spec.authors = ["Ryo Nakamura"]
   spec.email = ["r7kamura@gmail.com"]
 
@@ -36,4 +36,7 @@ Gem::Specification.new do |spec|
 
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html
+
+  spec.add_runtime_dependency 'rubocop'
 end
+
