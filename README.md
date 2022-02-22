@@ -12,8 +12,12 @@ gem 'rubocop-rails_deprecation', require: false
 
 And then execute:
 
-    $ bundle install
+```
+bundle install
+```
 
 Or install it yourself as:
 
-    $ gem install rubocop-rails_deprecation
+```
+gem install rubocop-rails_deprecation
+```
