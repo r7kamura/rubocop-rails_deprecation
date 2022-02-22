@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "rails_deprecation/version"
+require_relative 'rails_deprecation/version'
 
 module RuboCop
   module RailsDeprecation
@@ -13,4 +13,3 @@ module RuboCop
     private_constant(:CONFIG_DEFAULT, :PROJECT_ROOT)
   end
 end
-

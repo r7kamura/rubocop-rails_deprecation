@@ -1,3 +1,10 @@
+AllCops:
+  NewCops: enable
+  SuggestExtensions: false
+
 Naming/FileName:
  Exclude:
    - lib/rubocop-rails_deprecation.rb
+
+Style/Documentation:
+  Enabled: false
