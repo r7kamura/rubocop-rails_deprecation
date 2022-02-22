@@ -11,16 +11,13 @@ module RuboCop
       # @example
       #
       #   # bad
+      #   to_s(:delimited)
+      #
+      #   # good
+      #   to_formatted_s(:delimited)
+      #
+      #   # good
       #   to_s
-      #
-      #   # bad
-      #   to_s(args)
-      #
-      #   # good
-      #   to_formatted_s
-      #
-      #   # good
-      #   to_formatted_s(args)
       #
       class ToFormattedS < Base
         extend AutoCorrector
