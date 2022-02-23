@@ -24,3 +24,11 @@ Or install it yourself as:
 ```
 gem install rubocop-rails_deprecation
 ```
+
+## Usage
+
+```yaml
+# .rubocop.yml
+require:
+  - rubocop-rails_deprecation
+```
