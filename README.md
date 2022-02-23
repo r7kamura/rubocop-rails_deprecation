@@ -1,6 +1,7 @@
 # rubocop-rails_deprecation
 
 [![test](https://github.com/r7kamura/rubocop-rails_deprecation/actions/workflows/test.yml/badge.svg)](https://github.com/r7kamura/rubocop-rails_deprecation/actions/workflows/test.yml)
+[![Gem Version](https://badge.fury.io/rb/rubocop-rails_deprecation.svg)](https://rubygems.org/gems/rubocop-rails_deprecation)
 
 RuboCop extension for Rails deprecation.
 
