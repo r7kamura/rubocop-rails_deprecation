@@ -1,5 +1,7 @@
 # rubocop-rails_deprecation
 
+[![test](https://github.com/r7kamura/rubocop-rails_deprecation/actions/workflows/test.yml/badge.svg)](https://github.com/r7kamura/rubocop-rails_deprecation/actions/workflows/test.yml)
+
 RuboCop extension for Rails deprecation.
 
 ## Installation
