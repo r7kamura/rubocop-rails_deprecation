@@ -66,4 +66,17 @@ RSpec.describe RuboCop::Cop::Deprecation::ToFormattedS, :config do
       RUBY
     end
   end
+
+  context 'with #to_s with &.' do
+    it 'registers an offense' do
+      expect_offense(<<~RUBY)
+        1&.to_s(:delimited)
+        ^^^^^^^^^^^^^^^^^^^ Use `to_fs(...)` instead of `to_s(...)`.
+      RUBY
+
+      expect_correction(<<~RUBY)
+        1&.to_fs(:delimited)
+      RUBY
+    end
+  end
 end

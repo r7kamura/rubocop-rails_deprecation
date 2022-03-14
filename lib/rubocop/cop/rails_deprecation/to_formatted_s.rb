@@ -30,7 +30,7 @@ module RuboCop
         MSG = 'Use `to_fs(...)` instead of `to_s(...)`.'
 
         def_node_matcher :to_s_with_any_argument?, <<~PATTERN
-          (send _ :to_s _ ...)
+          ({csend | send} _ :to_s _ ...)
         PATTERN
 
         def on_send(node)
@@ -43,6 +43,7 @@ module RuboCop
             )
           end
         end
+        alias on_csend on_send
       end
     end
   end
