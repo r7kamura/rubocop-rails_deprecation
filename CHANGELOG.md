@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 0.2.0
+
 ### Changed
 
 - Make #to_fs the default replacement for #to_s(:format).
