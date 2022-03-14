@@ -2,13 +2,13 @@
 
 ## Unreleased
 
-## 0.4.0
+## 0.4.0 - 2022-03-14
 
 ### Added
 
 - Support csend on RailsDeprecation/ToFormattedS.
 
-## 0.3.0
+## 0.3.0 - 2022-03-14
 
 ### Changed
 
@@ -21,7 +21,7 @@
 
 - Make #to_fs the default replacement for #to_s(:format).
 
-## 0.1.0
+## 0.1.0 - 2022-02-23
 
 ### Added
 
