@@ -6,12 +6,15 @@ module RuboCop
       # This cop identifies passing a format to `#to_s`.
       #
       # @safety
-      #   This cop's auto-correction is unsafe because a custom or unrelated `to_s` method call would be change to `to_formatted_s`.
+      #   This cop's auto-correction is unsafe because a custom or unrelated `to_s` method call would be change to `to_fs`.
       #
       # @example
       #
       #   # bad
       #   to_s(:delimited)
+      #
+      #   # good
+      #   to_fs(:delimited)
       #
       #   # good
       #   to_formatted_s(:delimited)
@@ -24,7 +27,7 @@ module RuboCop
 
         self.minimum_target_rails_version = 7.0
 
-        MSG = 'Use `to_formatted_s(...)` instead of `to_s(...)`.'
+        MSG = 'Use `to_fs(...)` instead of `to_s(...)`.'
 
         def_node_matcher :to_s_with_any_argument?, <<~PATTERN
           (send _ :to_s _ ...)
@@ -36,7 +39,7 @@ module RuboCop
           add_offense(node) do |rewriter|
             rewriter.replace(
               node.loc.selector,
-              'to_formatted_s'
+              'to_fs'
             )
           end
         end
