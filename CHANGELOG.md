@@ -5,6 +5,7 @@
 ### Changed
 
 - Rename RailsDeprecation/ToFormattedS with Deprecation/ToFormattedS.
+- Enable cop by default.
 
 ## 0.2.0
 

@@ -1,4 +1,4 @@
 Deprecation/ToFormattedS:
   Description: Use `to_fs(...)` instead of `to_s(...)`.
-  Enabled: pending
+  Enabled: true
   VersionAdded: '0.1'
