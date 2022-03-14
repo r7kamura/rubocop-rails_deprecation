@@ -1,4 +1,4 @@
 Deprecation/ToFormattedS:
-  Description: Use `to_formatted_s(...)` instead of `to_s(...)`.
+  Description: Use `to_fs(...)` instead of `to_s(...)`.
   Enabled: pending
   VersionAdded: '0.1'
