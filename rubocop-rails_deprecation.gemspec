@@ -4,7 +4,7 @@ require_relative 'lib/rubocop/rails_deprecation/version'
 
 Gem::Specification.new do |spec|
   spec.name = 'rubocop-rails_deprecation'
-  spec.version = RuboCop::RailsDeprecation::VERSION
+  spec.version = RuboCop::Deprecation::VERSION
   spec.authors = ['Ryo Nakamura']
   spec.email = ['r7kamura@gmail.com']
 

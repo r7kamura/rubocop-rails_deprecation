@@ -2,7 +2,7 @@
 
 module RuboCop
   module Cop
-    module RailsDeprecation
+    module Deprecation
       class Base < ::RuboCop::Cop::Base
         DEFAULT_MINIMUM_TARGET_RAILS_VERSION = 5.0
 
