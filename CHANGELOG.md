@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 0.4.0
+
 ### Added
 
 - Support csend on RailsDeprecation/ToFormattedS.
