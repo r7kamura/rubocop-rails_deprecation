@@ -45,11 +45,11 @@ RSpec.describe RuboCop::Cop::RailsDeprecation::ToFormattedS, :config do
     it 'registers an offense' do
       expect_offense(<<~RUBY)
         to_s(:delimited)
-        ^^^^^^^^^^^^^^^^ Use `to_formatted_s(...)` instead of `to_s(...)`.
+        ^^^^^^^^^^^^^^^^ Use `to_fs(...)` instead of `to_s(...)`.
       RUBY
 
       expect_correction(<<~RUBY)
-        to_formatted_s(:delimited)
+        to_fs(:delimited)
       RUBY
     end
   end
@@ -58,11 +58,11 @@ RSpec.describe RuboCop::Cop::RailsDeprecation::ToFormattedS, :config do
     it 'registers an offense' do
       expect_offense(<<~RUBY)
         1.to_s(:delimited)
-        ^^^^^^^^^^^^^^^^^^ Use `to_formatted_s(...)` instead of `to_s(...)`.
+        ^^^^^^^^^^^^^^^^^^ Use `to_fs(...)` instead of `to_s(...)`.
       RUBY
 
       expect_correction(<<~RUBY)
-        1.to_formatted_s(:delimited)
+        1.to_fs(:delimited)
       RUBY
     end
   end
