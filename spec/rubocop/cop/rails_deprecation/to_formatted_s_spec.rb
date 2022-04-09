@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe RuboCop::Cop::Deprecation::ToFormattedS, :config do
+RSpec.describe RuboCop::Cop::RailsDeprecation::ToFormattedS, :config do
   let(:config) do
     RuboCop::Config.new(
       'AllCops' => {

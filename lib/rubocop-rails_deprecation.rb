@@ -6,6 +6,6 @@ require_relative 'rubocop/rails_deprecation'
 require_relative 'rubocop/rails_deprecation/version'
 require_relative 'rubocop/rails_deprecation/inject'
 
-RuboCop::Deprecation::Inject.defaults!
+RuboCop::RailsDeprecation::Inject.defaults!
 
 require_relative 'rubocop/cop/rails_deprecation_cops'

@@ -2,7 +2,7 @@
 
 module RuboCop
   module Cop
-    module Deprecation
+    module RailsDeprecation
       # This cop identifies passing a format to `#to_s`.
       #
       # @safety
