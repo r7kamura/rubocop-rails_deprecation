@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 0.6.0 - 2022-04-10
+
 ### Added
 
 - Add RailsDeprecation/WhereNot cop.
