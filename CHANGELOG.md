@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 0.5.0 - 2022-04-10
+
 ### Changed
 
 - Rename Deprecation/ToFormattedS with RailsDeprecation/ToFormattedS.

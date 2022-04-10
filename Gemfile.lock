@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rubocop-rails_deprecation (0.4.0)
+    rubocop-rails_deprecation (0.5.0)
       rubocop (>= 1.27)
 
 GEM
