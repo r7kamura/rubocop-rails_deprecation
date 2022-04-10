@@ -41,7 +41,20 @@ RSpec.describe RuboCop::Cop::RailsDeprecation::WhereNot, :config do
       RUBY
 
       expect_correction(<<~RUBY)
-        where.not(key1: value1, ).where.not(key2: value2)
+        where.not(key1: value1).where.not(key2: value2)
+      RUBY
+    end
+  end
+
+  context 'with where.not with more multiple elements Hash' do
+    it 'registers an offense' do
+      expect_offense(<<~RUBY)
+        where.not(key1: value1, key2: value2, key3: value3)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Use `where.not(key1: value1).where.not(key2: value2)` instead of `where.not(key1: value1, key2: value2)`.
+      RUBY
+
+      expect_correction(<<~RUBY)
+        where.not(key1: value1).where.not(key2: value2).where.not(key3: value3)
       RUBY
     end
   end

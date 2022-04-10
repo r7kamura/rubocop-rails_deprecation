@@ -35,8 +35,11 @@ module RuboCop
           return unless where_not_with_multiple_elements_hash?(node)
 
           add_offense(node) do |corrector|
-            node.children[2].children[1..].each do |pair|
-              corrector.remove(pair.location.expression)
+            pairs = node.children[2].children
+            last_end_pos = pairs[0].location.expression.end_pos
+            pairs[1..].each do |pair|
+              corrector.remove(pair.location.expression.with(begin_pos: last_end_pos))
+              last_end_pos = pair.location.expression.end_pos
               corrector.insert_after(node.location.expression, ".where.not(#{pair.source})")
             end
           end
