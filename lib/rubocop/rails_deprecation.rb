@@ -3,7 +3,7 @@
 require_relative 'rails_deprecation/version'
 
 module RuboCop
-  module Deprecation
+  module RailsDeprecation
     class Error < StandardError; end
     # Your code goes here...
     PROJECT_ROOT   = Pathname.new(__dir__).parent.parent.expand_path.freeze

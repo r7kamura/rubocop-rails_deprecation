@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module RuboCop
-  module Deprecation
+  module RailsDeprecation
     VERSION = '0.4.0'
   end
 end
