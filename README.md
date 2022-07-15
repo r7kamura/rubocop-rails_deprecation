@@ -5,6 +5,9 @@
 
 RuboCop extension for Rails deprecation.
 
+This gem is no longer maintained.
+Please use [sevencop](https://github.com/r7kamura/sevencop) instead.
+
 ## Installation
 
 Add this line to your application's Gemfile:
